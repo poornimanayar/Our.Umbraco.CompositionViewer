@@ -24,3 +24,11 @@
 
 # Ignore the Models Builder models out of date flag
 **/App_Data/Models/ood.flag
+/Our.Umbraco.CompositionViewer/packages
+/Our.Umbraco.CompositionViewer/.vs/Our.Umbraco.CompositionViewer
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/bin
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/obj/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/Umbraco
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer/obj/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer/bin/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/App_Plugins/Our.Umbraco.CompositionViewer
