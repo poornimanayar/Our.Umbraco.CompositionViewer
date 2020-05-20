@@ -1,4 +1,4 @@
-﻿namespace Our.Umbraco.CompositionViewer.PackageConstants
+﻿namespace Our.Umbraco.CompositionsViewer.PackageConstants
 {
    public class CompositionViewerConstants
     {

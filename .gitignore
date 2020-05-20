@@ -24,13 +24,13 @@
 
 # Ignore the Models Builder models out of date flag
 **/App_Data/Models/ood.flag
+/Our.Umbraco.CompositionViewer/.vs/Our.Umbraco.CompositionsViewer
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer/bin/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer/obj/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/App_Plugins/CompositionsViewer
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/App_Data/Models
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/App_Data/packages
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/bin
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/obj/Debug
+/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionsViewer.Web/Umbraco
 /Our.Umbraco.CompositionViewer/packages
-/Our.Umbraco.CompositionViewer/.vs/Our.Umbraco.CompositionViewer
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/bin
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/obj/Debug
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/Umbraco
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer/obj/Debug
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer/bin/Debug
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/App_Plugins/Our.Umbraco.CompositionViewer
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/App_Data/Models
-/Our.Umbraco.CompositionViewer/Our.Umbraco.CompositionViewer.Web/App_Plugins/CompositionsViewer

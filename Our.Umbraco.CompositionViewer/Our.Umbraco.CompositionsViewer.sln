@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.CompositionViewer.Web", "Our.Umbraco.CompositionViewer.Web\Our.Umbraco.CompositionViewer.Web.csproj", "{1298FE23-F542-4DB3-A766-235976BEC219}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.CompositionsViewer.Web", "Our.Umbraco.CompositionsViewer.Web\Our.Umbraco.CompositionsViewer.Web.csproj", "{1298FE23-F542-4DB3-A766-235976BEC219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.CompositionViewer", "Our.Umbraco.CompositionViewer\Our.Umbraco.CompositionViewer.csproj", "{3235E40F-D92D-4893-95EA-00E6EC885FBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.CompositionsViewer", "Our.Umbraco.CompositionsViewer\Our.Umbraco.CompositionsViewer.csproj", "{3235E40F-D92D-4893-95EA-00E6EC885FBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

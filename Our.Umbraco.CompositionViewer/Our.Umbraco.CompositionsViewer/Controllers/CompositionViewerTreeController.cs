@@ -1,12 +1,12 @@
 ﻿using System.Net.Http.Formatting;
-using Our.Umbraco.CompositionViewer.PackageConstants;
+using Our.Umbraco.CompositionsViewer.PackageConstants;
+using Umbraco.Core;
 using Umbraco.Web.Models.Trees;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.Trees;
 using Umbraco.Web.WebApi.Filters;
-using Umbraco.Core;
 
-namespace Our.Umbraco.CompositionViewer.Controllers
+namespace Our.Umbraco.CompositionsViewer.Controllers
 {
 
     [Tree(Constants.Applications.Settings, CompositionViewerConstants.CompositionViewerTreeAlias, TreeTitle = CompositionViewerConstants.CompositionViewerTreeTitle, TreeGroup = Constants.Trees.Groups.ThirdParty, SortOrder = 5)]
