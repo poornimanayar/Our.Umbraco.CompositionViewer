@@ -360,6 +360,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Our.Umbraco.CompositionViewer\Our.Umbraco.CompositionViewer.csproj">
+      <Project>{3235e40f-d92d-4893-95ea-00e6ec885fbd}</Project>
+      <Name>Our.Umbraco.CompositionViewer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

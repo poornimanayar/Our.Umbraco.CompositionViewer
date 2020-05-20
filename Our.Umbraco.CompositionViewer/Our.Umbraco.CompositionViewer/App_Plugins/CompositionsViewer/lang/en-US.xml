@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="treeHeaders">
+    <key alias="compositionsViewer">Compositions Viewer</key>
+  </area>
+  <area alias="compositionsViewer">
+    <key alias="Title">Compositions Viewer</key>
+    <key alias="Description">Information on your document types &amp; compositions</key>
+  </area>
+</language>
