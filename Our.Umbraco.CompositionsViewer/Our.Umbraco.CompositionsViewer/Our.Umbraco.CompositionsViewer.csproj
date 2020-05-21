@@ -245,9 +245,7 @@
     <None Include="App_Plugins\OurUmbracoCompositionsViewer\package.manifest" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\controllers\compositionsviewer.controller.js" />
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\view.html" />
