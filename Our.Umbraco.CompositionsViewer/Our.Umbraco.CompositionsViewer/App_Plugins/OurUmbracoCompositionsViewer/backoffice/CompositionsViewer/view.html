@@ -1,0 +1,51 @@
+﻿<div ng-controller="compositionsviewercontroller as vm">
+    <umb-editor-view footer="false">
+        <umb-editor-header name="vm.title"
+                           description="vm.description"
+                           name-locked="true"
+                           hide-alias="true"
+                           description-locked="true"
+                           hide-icon="true">
+
+        </umb-editor-header>
+        <umb-editor-container>
+            <div class="umb-editor-sub-views">
+
+                <div class="umb-editor-sub-view__content" ng-if="!vm.results || vm.results.results <= 0">
+                    <h4><localize key="compositionsViewer_noResults">No compositions to show</localize></h4>
+                </div>
+                <div class="umb-editor-sub-view__content" ng-if="vm.results && vm.results.length > 0">
+                    <div class="umb-group-panel ng-scope">
+                        <div class="umb-group-panel__content">
+                            <table class="table table-condensed table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="umb-dialog-datatype-delete__table-head-column-name"><localize key="compositionsViewer_compositionName">Composition</localize></th>
+                                        <th class="umb-dialog-datatype-delete__table-head-column-name">
+                                            <localize key="compositionsViewer_docTypesUsed">Composed in document types</localize>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="resultItem in vm.results | orderBy: 'composition.name'">
+                                    <tr>
+                                        <td rowspan="{{resultItem.documentTypes.length}}"><i class="umb-table-body__icon {{resultItem.composition.icon}}"></i> 
+                                            <a ng-click="vm.goToNode(resultItem.composition.id)" title="{{resultItem.composition.name}}">{{resultItem.composition.name}}</a>
+                                        </td>
+                                        <td><i class="umb-table-body__icon {{resultItem.documentTypes[0].contentType.icon}}"></i> <a ng-click="vm.goToNode(resultItem.documentTypes[0].contentType.id)">{{resultItem.documentTypes[0].contentType.name}}</a></td>
+                                      
+                                    </tr>
+                                    <tr ng-repeat="documentType in resultItem.documentTypes" ng-if="$index > 0">
+                                        <td><i class="umb-table-body__icon {{documentType.contentType.icon}}"></i> <a ng-click="vm.goToNode(documentType.contentType.id)"> {{documentType.contentType.name}}</a></td>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </umb-editor-container>
+    </umb-editor-view>
+</div>

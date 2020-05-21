@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language alias="en">
+  <area alias="treeHeaders">
+    <key alias="compositionsViewer">Compositions Viewer</key>
+  </area>
+  <area alias="compositionsViewer">
+    <key alias="title">Compositions Viewer</key>
+    <key alias="description">Information on your document types &amp; compositions</key>
+    <key alias="noResults">No compositions to show</key>
+    <key alias="compositionName">Composition</key>
+    <key alias="docTypesUsed">Composed in document types</key>
+    <key alias="editDocType">Edit Document Type</key>
+  </area>
+</language>

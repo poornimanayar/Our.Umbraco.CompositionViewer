@@ -11,7 +11,7 @@ namespace Our.Umbraco.CompositionsViewer.Controllers
 
     [Tree(Constants.Applications.Settings, CompositionViewerConstants.CompositionViewerTreeAlias, TreeTitle = CompositionViewerConstants.CompositionViewerTreeTitle, TreeGroup = Constants.Trees.Groups.ThirdParty, SortOrder = 5)]
     [UmbracoApplicationAuthorize(Constants.Applications.Settings)]
-    [PluginController("CompositionsViewer")]
+    [PluginController(CompositionViewerConstants.CompositionViewerPluginAreaName)]
     public class CompositionViewerTreeController : TreeController
     {
         protected override TreeNodeCollection GetTreeNodes(string id, FormDataCollection queryStrings)
@@ -28,7 +28,7 @@ namespace Our.Umbraco.CompositionsViewer.Controllers
         {
             var root = base.CreateRootNode(queryStrings);
 
-            root.RoutePath = $"{Constants.Applications.Settings}/compositionsViewer/view";
+            root.RoutePath = $"{Constants.Applications.Settings}/{CompositionViewerConstants.CompositionViewerTreeAlias}/view";
             root.Icon = "icon-help-alt";
             root.HasChildren = false;
             root.MenuUrl = null;
