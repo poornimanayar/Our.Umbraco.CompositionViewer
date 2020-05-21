@@ -17,6 +17,14 @@
                 <div class="umb-editor-sub-view__content" ng-if="vm.results && vm.results.length > 0">
                     <div class="umb-group-panel ng-scope">
                         <div class="umb-group-panel__content">
+                           
+                            <umb-pane ng-if="!currentNode.metaData.variesByCulture">
+
+                                <label for="compositions" class="control-label"><localize key="compositionsViewer_filter">Filter by composition</localize></label>
+                                <select name="compositions" class="umb-dropdown" ng-options="resultItem.composition.id as resultItem.composition.name for resultItem in vm.results| orderBy: 'composition.name'" ng-model="vm.selectedcomposition" ng-change="vm.filter()">
+                                    <option value="">-Show all-</option>
+                                </select>
+                            </umb-pane>
                             <table class="table table-condensed table-bordered">
                                 <thead>
                                     <tr>
@@ -26,17 +34,18 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody ng-repeat="resultItem in vm.results | orderBy: 'composition.name'">
+                                <tbody ng-repeat="resultItem in vm.results | filter : {'show':'1'}| orderBy: 'composition.name'">
                                     <tr>
-                                        <td rowspan="{{resultItem.documentTypes.length}}"><i class="umb-table-body__icon {{resultItem.composition.icon}}"></i> 
+                                        <td rowspan="{{resultItem.documentTypes.length}}">
+                                            <i class="umb-table-body__icon {{resultItem.composition.icon}}"></i>
                                             <a ng-click="vm.goToNode(resultItem.composition.id)" title="{{resultItem.composition.name}}">{{resultItem.composition.name}}</a>
                                         </td>
                                         <td><i class="umb-table-body__icon {{resultItem.documentTypes[0].contentType.icon}}"></i> <a ng-click="vm.goToNode(resultItem.documentTypes[0].contentType.id)">{{resultItem.documentTypes[0].contentType.name}}</a></td>
-                                      
+
                                     </tr>
                                     <tr ng-repeat="documentType in resultItem.documentTypes" ng-if="$index > 0">
                                         <td><i class="umb-table-body__icon {{documentType.contentType.icon}}"></i> <a ng-click="vm.goToNode(documentType.contentType.id)"> {{documentType.contentType.name}}</a></td>
-                                       
+
                                     </tr>
                                 </tbody>
                             </table>

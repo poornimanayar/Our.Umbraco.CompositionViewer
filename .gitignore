@@ -34,3 +34,8 @@
 /Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer.Web/obj/Debug
 /Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer.Web/Umbraco
 /Our.Umbraco.CompositionsViewer/packages
+/Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer/bin/Release
+/Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer/obj/Release
+/Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer.Web/obj/Release
+
+Our.Umbraco.CompositionsViewer/Our.Umbraco.CompositionsViewer.Web/App_Plugins/OurUmbracoCompositionsViewer/
