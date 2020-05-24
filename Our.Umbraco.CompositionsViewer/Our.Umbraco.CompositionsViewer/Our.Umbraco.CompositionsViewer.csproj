@@ -243,13 +243,18 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="App_Plugins\OurUmbracoCompositionsViewer\package.manifest" />
+    <None Include="Our.Umbraco.CompositionsViewer.csproj.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\controllers\compositionsviewer.controller.js" />
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\view.html" />
-    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-US.xml" />
+    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-au.xml" />
+    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-ca.xml" />
+    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-gb.xml" />
+    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-us.xml" />
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />

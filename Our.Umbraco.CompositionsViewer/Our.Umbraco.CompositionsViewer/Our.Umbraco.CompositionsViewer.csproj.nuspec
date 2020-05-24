@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Our.Umbraco.CompositionsViewer</id>
+    <version>1.0.0</version>
+    <title>Our.Umbraco.CompositionsViewer</title>
+    <authors>Poornima Nayar</authors>
+    <owners>Poornima Nayar</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/poornimanayar/Our.Umbraco.CompositionViewer</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A package to gain information about compositions and document types composed of the compositions.</description>
+    <releaseNotes>
+      Initial release of the package
+    </releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Umbraco Dashboard</tags>
+    <dependencies>
+      <dependency id="UmbracoCms.Core" version="8.0.0" />
+      <dependency id="UmbracoCms.Web" version="8.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="App_Plugins\OurUmbracoCompositionsViewer\**\*.*" target="content\App_Plugins\OurUmbracoCompositionsViewer" />
+    <file src="readme.txt" target="" />
+  </files>
+</package>
