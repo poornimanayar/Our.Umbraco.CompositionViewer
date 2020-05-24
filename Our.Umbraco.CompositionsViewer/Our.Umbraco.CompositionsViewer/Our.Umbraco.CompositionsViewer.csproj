@@ -249,6 +249,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\controllers\compositionsviewer.controller.js" />
+    <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\css\styles.css" />
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\backoffice\CompositionsViewer\view.html" />
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-au.xml" />
     <Content Include="App_Plugins\OurUmbracoCompositionsViewer\lang\en-ca.xml" />

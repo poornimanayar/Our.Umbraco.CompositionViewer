@@ -34,7 +34,7 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody ng-repeat="resultItem in vm.results | filter : {'show':'1'}| orderBy: 'composition.name'">
+                                <tbody ng-class-odd="'odd-row'" ng-repeat="resultItem in vm.results | filter : {'show':'1'}| orderBy: 'composition.name'">
                                     <tr>
                                         <td rowspan="{{resultItem.documentTypes.length}}">
                                             <i class="umb-table-body__icon {{resultItem.composition.icon}}"></i>
