@@ -1,10 +1,12 @@
-﻿angular.module("umbraco").controller("compositionsviewercontroller", function (contentTypeResource, localizationService) {
+﻿angular.module("umbraco").controller("compositionsviewercontroller", function (contentTypeResource, editorService, localizationService, $scope) {
     var vm = this;
     vm.title = "";
     vm.description = "";
     vm.results = [];
-    
-    vm.init = function() {
+    vm.selectedcomposition = null;
+    $scope.initialising = true;
+
+    vm.init = function () {
         var labelKeys = [
             "compositionsViewer_title",
             "compositionsViewer_description"
@@ -16,11 +18,11 @@
         });
     }
 
-    vm.getData = function() {
+    vm.getData = function () {
         contentTypeResource.getAll().then(
-            function(allDocTypes) {
+            function (allDocTypes) {
                 angular.forEach(allDocTypes,
-                    function(docType) {
+                    function (docType) {
                         contentTypeResource.getWhereCompositionIsUsedInContentTypes(docType.id).then(
                             function (response) {
                                 if (response.length > 0) {
@@ -29,12 +31,12 @@
                                         function (item) {
                                             documentTypes.push(item);
                                         });
-                                    var resultItem = { composition: docType, documentTypes: documentTypes };
+                                    var resultItem = { composition: docType, documentTypes: documentTypes, show: '1' };
                                     vm.results.push(resultItem);
                                 }
                             });
                     });
-                console.log(vm.results);
+                $scope.initialising = false;
             });
     }
 
@@ -43,7 +45,37 @@
     vm.init();
 
     vm.goToNode = function (id) {
-        window.location.replace('#/settings/documentTypes/edit/'+id);
+
+        var options = {
+            id: id,
+            submit: function () {
+                // when the user saves the doctype, 
+                // you could refresh the view ? 
+                // (they might have added / removed compositions)
+                editorService.close();
+            },
+            close: function () {
+                editorService.close();
+            }
+        };
+
+        editorService.documentTypeEditor(options);
     }
 
+    vm.filter = function () {
+        if (vm.selectedcomposition === null) {
+            vm.results.forEach(function (result) {
+                result.show = '1';
+            });
+        } else {
+            vm.results.forEach(function (result) {
+                if (result.composition.id === vm.selectedcomposition) {
+                    result.show = '1';
+                }
+                else {
+                    result.show = '0';
+                }
+            });
+        }
+    }
 });

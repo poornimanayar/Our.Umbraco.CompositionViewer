@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("compositionsviewercontroller", function (contentTypeResource, localizationService, $scope) {
+﻿angular.module("umbraco").controller("compositionsviewercontroller", function (contentTypeResource, editorService, localizationService, $scope) {
     var vm = this;
     vm.title = "";
     vm.description = "";
@@ -45,7 +45,21 @@
     vm.init();
 
     vm.goToNode = function (id) {
-        window.location.replace('#/settings/documentTypes/edit/' + id);
+
+        var options = {
+            id: id,
+            submit: function () {
+                // when the user saves the doctype, 
+                // you could refresh the view ? 
+                // (they might have added / removed compositions)
+                editorService.close();
+            },
+            close: function () {
+                editorService.close();
+            }
+        };
+
+        editorService.documentTypeEditor(options);
     }
 
     vm.filter = function () {
