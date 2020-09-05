@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Our.Umbraco.CompositionsViewer</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>Our.Umbraco.CompositionsViewer</title>
     <authors>Poornima Nayar</authors>
     <owners>Poornima Nayar</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A package to gain information about compositions and document types composed of the compositions.</description>
     <releaseNotes>
-      Initial release of the package
+      - Document type opens up in infinite editor mode
     </releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Umbraco Dashboard</tags>
